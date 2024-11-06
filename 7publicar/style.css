@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  background-color: white;
+  font-family: hind, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: hind;
+  src: url('/7publicar/fuentes/hind.regular.ttf') format('truetype')
+}
+
+.flex1 {
+  display: flex;
+  margin-bottom: var(--marginBottom1);
+}
+
+:root {
+  --marginBottom1: 30px;
+}
+
+.provincia1,
+.ciudad1,
+.piso1,
+.direccion1 {
+  width: 180px;
+  height: 30px;
+  margin-right: 20px;
+  border: 1px #cacdd2 solid;
+  outline: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+::placeholder {
+  color: #b9bec4;
+}
+
+option {
+  color: black;
+}
+
+.monto3 {
+  width: 380px;
+}
+
+.monto4 {
+  width: 246px
+}
+
+textarea {
+  width: 780px;
+  height: 200px;
+  border: 1px #cacdd2 solid;
+  outline: none;
+  margin-bottom: calc(var(--marginBottom1) - 0px);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.button {
+  padding: 8px 30px;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  user-select: none;
+  cursor: pointer;
+}

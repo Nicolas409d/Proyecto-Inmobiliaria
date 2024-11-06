@@ -1,0 +1,171 @@
+* {
+  margin: 0px;
+  background-color: white;
+  font-family: hind, Arial, Helvetica, sans-serif;
+}
+
+.texto1 {
+  z-index: 10;
+  font-family: 'Roboto', Arial;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --separacionImgTxt: 25px;
+}
+
+.textoJunto1 {
+  display: flex;
+}
+
+.textoIconos1 {
+  display: flex;
+}
+
+.divTitulo1 h2 {
+  font-family: Arial, Roboto, AMX;
+  font-weight: 700;
+  margin-top: 20px;
+  background-color: #F2F2F2;
+}
+
+.divTitulo1 {
+  background-color: #F2F2F2;
+}
+
+.divInput1 {
+  border: 1px #b1b1b1 solid;
+  border-radius: 10px;
+  padding: 10px 5px;
+  width: 350px;
+  height: 30px;
+  color: rgb(83, 118, 138);
+  font-family: Hind, sans-serif;
+  transition: height 0.3s;
+}
+
+.divPadre1 {
+  width: 400px;
+  height: 550px;
+  border: 1px #b1b1b1 solid;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #F2F2F2;
+}
+
+.mensajeDiv1 {
+  height: 200px;
+}
+
+.mensajeTextarea1 {
+  height: 185px;
+  width: 350px;
+  outline: none;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#divInput2,
+#divInput2b {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #F2F2F2;
+}
+
+#divInput2z {
+  background-color: white;
+  border-radius: 8px;
+}
+
+#divInput2b {
+  margin-top: 0px;
+}
+
+#idInputTransp11,
+.a1 {
+  position: absolute;
+  font-family: Hind, sans-serif;
+  color: rgb(83, 118, 138);
+  padding: 20px 0px 10px 0px;
+  background-color: transparent;
+  padding-left: 10px;
+  transition: height 0.3s;
+  transition: font-size 0.3s;
+  height: 20px;
+  line-height: 60px;
+  margin-top: 0px;
+  padding-top: 0px;
+  user-select: none;
+  pointer-events: none;
+}
+
+#idInputTransp112,
+.a2 {
+  padding: 20px 0px 10px 0px;
+  font-size: 20px;
+  background-color: transparent;
+  z-index: 9;
+  padding-left: 10px;
+  border: 1px rgb(83, 118, 138) solid;
+  border-radius: 8px;
+  outline: none;
+  width: 360px;
+}
+
+.botonEnviar1 {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  background-color: #145CD9;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 0px;
+  line-height: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif, Hind;
+  font-size: 17px;
+}
+
+.botonEnviar1:hover {
+  background-color: #0e4097;
+}
+
+.normal1 {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.fixed1 {
+  position: fixed;
+  margin-left: 40px;
+  left: 65%;
+  top: 10px;
+  transform: translate(-0%, -0%);
+  margin-top: 20px;
+}
+
+.normal2 {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 938px;
+
+}
+
+@font-face {
+  font-family: hind;
+  src: url('/6propiedad/fuentes/hind.regular.ttf') format('truetype')
+}

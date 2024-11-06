@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  background-color: white;
+  font-family: hind, Arial, Helvetica, sans-serif;
+}
+
+.imgPadre {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: calc(100% - 50px);
+  position: absolute;
+  z-index: 9;
+}
+
+img {
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100% - 50px);
+  display: block;
+  z-index: 5;
+  height: 100%;
+}
+
+.filtro1 {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 700px;
+  height: 400px;
+  position: absolute;
+  z-index: 14;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 24px;
+  backdrop-filter: blur(1px);
+}
+
+.filtro2 {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  z-index: 18;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+input {
+  padding-left: 8px;
+}
+
+select {
+  padding-left: 8px;
+}
+
+#menuBtn2 {
+  display: none
+}
+
+#registro1 {
+  display: none
+}
+
+#mensaje2 {
+  transition: margin-left 0.1s ease-out;
+  display: none;
+}
+
+@font-face {
+  font-family: hind;
+  src: url('fuentes/hind.regular.ttf') format('truetype')
+}

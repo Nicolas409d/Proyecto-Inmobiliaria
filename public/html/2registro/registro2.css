@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    font-family: hind, Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#divInput2b,
+#divInput2c,
+#divInput2d {
+    margin-top: 0px;
+}
+
+.botonEnviar1 {
+    background-color: #0e4097;
+}
+
+.botonEnviar1:hover {
+    background-color: #0a2f6e;
+}
+
+h5 {
+    background-color: transparent;
+    color: white;
+}
+
+input {
+    color: black;
+    text-decoration: none;
+}
+
+.a1 {
+    font-size: 18px;
+    line-height: 55px;
+    transition: height 0.3s;
+    transition: font-size 0.3s;
+}
+
+@font-face {
+    font-family: hind;
+    src: url('/2registro/fuentes/hind.regular.ttf') format('truetype')
+}
+
