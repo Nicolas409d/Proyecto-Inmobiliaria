@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  background-color: white;
+  font-family: hind, Arial, Helvetica, sans-serif;
+}
+
+.imgPadre {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: calc(100% - 50px);
+  position: absolute;
+  z-index: 9;
+}
+
+img {
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100% - 50px);
+  display: block;
+  z-index: 5;
+  height: 100%;
+}
+
+.imagenEInfo {
+  box-shadow: 0 0 3px black;
+  border-radius: 20px 0 0 20px;
+  cursor: pointer;
+}
+
+.imagenEInfo:hover {
+  box-shadow: 0 0 5px black;
+}
+
+@font-face {
+  font-family: hind;
+  src: url('/8mis-publicaciones/fuentes/hind.regular.ttf') format('truetype')
+}
