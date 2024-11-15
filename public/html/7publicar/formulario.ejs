@@ -265,10 +265,9 @@
 
     
     <div> 
-      <div id="latitud" style="display: none">12</div> 
-      <div id="longitud" style="display: none">34</div> 
+      <div id="latitud" style="display: none"></div> 
+      <div id="longitud" style="display: none"></div> 
     </div>
-
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
@@ -281,12 +280,12 @@
     <h3 style="margin-left: -270px;">Ubique el marcador en la posición
       aproximada del inmueble</h3>
 
-    <div id="mapid" style="box-shadow: 0 0 1px black; height: 400px; width: 780px; margin-left: -20px"></div>
+    <div id="mapid" style="box-shadow: 0 0 1px black; height: 400px; width: 780px; margin-left: -20px; margin-bottom: 30px;"></div>
     <div id="lat" style="display: none;">Latitud: </div> <!--!!!!!!lo unico que importa en la coordenada-->
     <div id="lng" style="display: none;">Longitud: </div>
     <div id="locationName" style="display: none;"> Nombre del lugar: </div>
 
-    <div style="margin-left: -645px; margin-top: 1px;" id="superiorInformacion">
+    <div style="margin-left: -645px; margin-top: 1px; display: none;" id="superiorInformacion">
       <div style="display: flex; height: 20px; margin-top:5px;">
         <div id="streetName" style="margin-right: 10px;"> Calle: - </div>
         <div id="streetNumber"> Número: - </div>
@@ -301,6 +300,7 @@
     <input id="logg" style="display: none;" value="">
     <input id="latt" style="display: none;" value="">
 
+
     <input id="precioLink" style="display: none;" value="">
     <input id="expensaLink" style="display: none;" value="">
     <input id="direccionLink" style="display: none;" value="">
@@ -310,11 +310,23 @@
 
 
     <script>
-      let valorA = document.getElementById('latt').value
-      let valorB = document.getElementById('logg').value
+let lat111 = null
+let lon222 = null
+setInterval(() => {
+      valorA = document.getElementById('latt').value
+      valorB = document.getElementById('logg').value
 
+//document.getElementById("lat").value = valorA
+//document.getElementById("lng").value = valorB
+
+//document.getElementById("latitud").value = valorA
+//document.getElementById("longitud").value = valorB
+
+document.getElementById("latitud").textContent = valorA
+document.getElementById("longitud").textContent = valorB
+
+if (lat111 != valorA || lon222 != valorB) {  
       let pos11 = [valorA, valorB];
-
 
       var mymap = L.map('mapid').setView(pos11, 14);   //16   zoom 
       L.tileLayer('https://static1.sosiva451.com/Mapas/v2/{z}/{x}/{y}', {
@@ -379,6 +391,8 @@
 
         mymap.setView(latlng, mymap.getZoom());
       });
+}
+},500)
     </script>
 
 
